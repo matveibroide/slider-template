@@ -1,24 +1,3 @@
-# slider template
-SLIDER TEMPLATE
-
-You can pass settings(which will contain selectors you will write) as object from the main script:
-
-----------------function in the main script---------------------------------
-
- slider({
-        container: '.offer__slider',
-        slide: '.offer__slide',
-        nextArrow: '.offer__slider-next',
-        prevArrow: '.offer__slider-prev',
-        totalCounter: '#total',
-        currentCounter: '#current',
-        wrapper: '.offer__slider-wrapper',
-        field: '.offer__slider-inner'
-    });
-
-
-------------------------module-slider----------------------------------------
-
 function slider({container, slide, nextArrow, prevArrow, totalCounter, currentCounter,wrapper, field}) {
     let offset = 0;
     let slideIndex = 1;
@@ -169,5 +148,4 @@ function slider({container, slide, nextArrow, prevArrow, totalCounter, currentCo
         return +str.replace(/\D/g, '');
     }
 }
-
 
